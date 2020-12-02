@@ -34,7 +34,7 @@ def findSumRec(expReport, entries, tot, cur=[]):
 
 
 
-f = open('inputd1.txt', 'r+')
+f = open('inputd01.txt', 'r+')
 my_file_data = f.read()
 f.close()
 
