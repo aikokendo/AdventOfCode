@@ -14,12 +14,9 @@ def findSumRec(expReport, entries, tot, cur=[]):
             return cur
         return
     else: # less than entries, must go down
-        print('1',expReport, cur)
         cur.append(expReport[0])
         newExp = expReport[1:]
-        print('2', newExp, cur)
         for i in range(len(expReport)):
-            print(i)
             result = findSumRec(newExp,entries,tot,copy.deepcopy(cur))
             if result is not None:
                 return result
@@ -27,10 +24,6 @@ def findSumRec(expReport, entries, tot, cur=[]):
                 return
             cur[len(cur)-1] = newExp[0]
             newExp = newExp[1:]
-
-
-
-
 
 
 
@@ -43,5 +36,6 @@ expReport = list(map(int,my_file_data.split('\n')))
 sumVal = findSum(expReport, 2020)
 print(sumVal[0] * sumVal[1] * sumVal[2])
 
-print(findSumRec(expReport[:6],3,2020))
+sumVal = findSumRec(expReport,3,2020)
+print(sumVal[0] * sumVal[1] * sumVal[2])
 
