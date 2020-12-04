@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77384b98-4bc2-4d5d-9a08-111f3b99753e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2020/helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2020/idDocument.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/AOCD01.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/AOCD02.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/AOCD03.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/AOCD04.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD04.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AOCD01.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AOCD01.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2020/AOCD01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state>
+              <caret column="13" selection-start-column="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -91,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AOCD04.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AOCD04.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2020/AOCD04.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="119">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -135,10 +129,10 @@
         <option value="$PROJECT_DIR$/2020/inputd04.txt" />
         <option value="$PROJECT_DIR$/2020/helper.py" />
         <option value="$PROJECT_DIR$/2020/input/idDocument.py" />
-        <option value="$PROJECT_DIR$/2020/AOCD04.py" />
         <option value="$PROJECT_DIR$/2020/AOCD03.py" />
         <option value="$PROJECT_DIR$/2020/AOCD02.py" />
         <option value="$PROJECT_DIR$/2020/AOCD01.py" />
+        <option value="$PROJECT_DIR$/2020/AOCD04.py" />
       </list>
     </option>
   </component>
@@ -435,16 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2020/AOCD04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2020/AOCD03.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -461,8 +445,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2020/AOCD01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state>
+          <caret column="13" selection-start-column="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2020/AOCD04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

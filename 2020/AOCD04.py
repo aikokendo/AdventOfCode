@@ -6,11 +6,9 @@ def parseFiletoIds(file_data,mandatory,optional,rules):
     return [IdDocument(id,mandatory,optional,rules) for id in ids]
 
 def countValidPassports(ids):
-    valid_passports = 0
     return sum([1 for id in ids if id.checkValid()])
 
 def countValidPassportsSimple(ids):
-    valid_passports = 0
     return sum([1 for id in ids if id.checkAllFieldsPresent()])
 
 m = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
