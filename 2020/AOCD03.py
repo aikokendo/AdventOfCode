@@ -12,7 +12,7 @@ def slidePath(h,v,terrain): # accepts horizontal and vertical input and terrain
 
 
 
-f = open('inputd03.txt', 'r+')
+f = open('input\inputd03.txt', 'r')
 my_file_data = f.read()
 f.close()
 

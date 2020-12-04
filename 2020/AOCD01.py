@@ -23,7 +23,7 @@ def findSumSol2(expReport, tot):
     return [0,0,0]
 
 
-f = open('inputd01.txt', 'r+')
+f = open('input\inputd01.txt', 'r+')
 my_file_data = f.read()
 f.close()
 

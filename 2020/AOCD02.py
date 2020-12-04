@@ -24,7 +24,7 @@ def password_checker(pass_policies):
     return valid_pass
 
 
-f = open('inputd02.txt', 'r')
+f = open('input\inputd02.txt', 'r')
 my_file_data = f.read()
 f.close()
 

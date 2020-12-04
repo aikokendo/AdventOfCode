@@ -58,7 +58,7 @@ rules = [
 # Make a regex that matches if any of our regexes match.
 rules = "(" + ")|(".join(rules) + ")"
 
-file_name = 'inputd04.txt'
+file_name = 'input\inputd04.txt'
 file = readFile(file_name)
 passports = parseFiletoIds(file,m,o,rules)
 print('Part 1 solution:', countValidPassportsSimple(passports))
