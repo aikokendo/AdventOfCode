@@ -1,35 +1,35 @@
-def passwordCheckerSledRental(passAndPolicies):
-    validPass = 0
-    for p in passAndPolicies:
+def password_checker_sled_rental(pass_policies):
+    valid_pass = 0
+    for p in pass_policies:
         elements = p.split()
-        passRange = elements[0].split('-')
-        charInstance =  elements[2].count(elements[1].replace(':',''))
-        if charInstance >= int(passRange[0]) and charInstance <= int(passRange[1]):
-            validPass += 1
+        pass_range = elements[0].split('-')
+        char_instance = elements[2].count(elements[1].replace(':',''))
+        if int(pass_range[0]) <= char_instance <= int(pass_range[1]):
+            valid_pass += 1
 
-    return validPass
+    return valid_pass
 
 
-def passwordChecker(passAndPolicies):
-    validPass = 0
-    for p in passAndPolicies:
+def password_checker(pass_policies):
+    valid_pass = 0
+    for p in pass_policies:
         elements = p.split()
-        passRange = elements[0].split('-')
-        start = int(passRange[0])-1
-        end = int(passRange[1])-1
+        pass_range = elements[0].split('-')
+        start = int(pass_range[0])-1
+        end = int(pass_range[1])-1
         policy = elements[1].replace(':', '')
         pas = elements[2]
         if (len(pas) > start and pas[start] == policy) ^ (len(pas) > end and pas[end] == policy):
-            validPass += 1
+            valid_pass += 1
+    return valid_pass
 
-    return validPass
 
-f = open('inputd02.txt', 'r+')
+f = open('inputd02.txt', 'r')
 my_file_data = f.read()
 f.close()
 
-passAndPolicies = my_file_data.split('\n')
+pass_policies = my_file_data.split('\n')
+print('Part 1 solution: ', password_checker_sled_rental(pass_policies))
+print('Part 2 solution: ', password_checker(pass_policies))
 
-validPass = passwordChecker(passAndPolicies)
-print(validPass)
 

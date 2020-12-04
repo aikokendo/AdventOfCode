@@ -1,30 +1,26 @@
-import copy
 
-def findSum(expReport, tot):
-    for i in expReport:
-        for j in expReport:
-            for k in expReport:
-                if i + j + k == tot:
-                    return [i,j,k]
+def findSumSol1(expReport, tot):
+    expReport.sort()
+    for i in range(0,len(expReport)):
+        if expReport[i] * 2 >tot:
+            break
+        for j in range(i+1, len(expReport)):
+                if expReport[i] + expReport[j] == tot:
+                    return [expReport[i],expReport[j]]
+    return [0,0]
 
-
-def findSumRec(expReport, entries, tot, cur=[]):
-    if len(cur) == entries:
-        if sum(cur) == tot:
-            return cur
-        return
-    else: # less than entries, must go down
-        cur.append(expReport[0])
-        newExp = expReport[1:]
-        for i in range(len(expReport)):
-            result = findSumRec(newExp,entries,tot,copy.deepcopy(cur))
-            if result is not None:
-                return result
-            if len(newExp) < 3:
-                return
-            cur[len(cur)-1] = newExp[0]
-            newExp = newExp[1:]
-
+def findSumSol2(expReport, tot):
+    expReport.sort()
+    for i in range(0,len(expReport)):
+        if expReport[i]>tot:
+            break
+        for j in range(i+1, len(expReport)):
+            if expReport[i] + (expReport[j]*2) > tot:
+                break
+            for k in range(j+1,len(expReport)):
+                if expReport[i] + expReport[j] + expReport[k] == tot:
+                    return [expReport[i],expReport[j],expReport[k]]
+    return [0,0,0]
 
 
 f = open('inputd01.txt', 'r+')
@@ -33,9 +29,10 @@ f.close()
 
 expReport = list(map(int,my_file_data.split('\n')))
 
-sumVal = findSum(expReport, 2020)
-print(sumVal[0] * sumVal[1] * sumVal[2])
+sumVal = findSumSol1(expReport, 2020)
+print('Part 1 solution:', sumVal[0] * sumVal[1])
 
-sumVal = findSumRec(expReport,3,2020)
-print(sumVal[0] * sumVal[1] * sumVal[2])
+sumVal = findSumSol2(expReport, 2020)
+print('Part 2 solution:', sumVal[0] * sumVal[1] * sumVal[2])
+
 
