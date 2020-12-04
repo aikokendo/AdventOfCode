@@ -1,3 +1,4 @@
+import helper
 def slidePath(h,v,terrain): # accepts horizontal and vertical input and terrain
     x = 0
     y = 0
@@ -11,10 +12,8 @@ def slidePath(h,v,terrain): # accepts horizontal and vertical input and terrain
     return trees
 
 
-
-f = open('input\inputd03.txt', 'r')
-my_file_data = f.read()
-f.close()
+file_name = 'input\inputd03.txt'
+my_file_data = helper.read_file(file_name)
 
 terrain = my_file_data.split('\n')
 print('Part 1 solution:', slidePath(3,1,terrain))

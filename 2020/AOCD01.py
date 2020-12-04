@@ -1,3 +1,4 @@
+import helper
 
 def findSumSol1(expReport, tot):
     expReport.sort()
@@ -23,9 +24,8 @@ def findSumSol2(expReport, tot):
     return [0,0,0]
 
 
-f = open('input\inputd01.txt', 'r+')
-my_file_data = f.read()
-f.close()
+file_name = 'input\inputd01.txt'
+my_file_data = helper.read_file(file_name)
 
 expReport = list(map(int,my_file_data.split('\n')))
 

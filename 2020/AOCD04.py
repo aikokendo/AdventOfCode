@@ -1,33 +1,5 @@
-import re
-
-class IdDocument:
-    def __init__(self, inputs, mandatory_fields, optional_fields,rules):
-        self.mandatory = set(mandatory_fields)
-        self.optional = set(optional_fields)
-        self.fields = [i for i in str.replace(inputs,'\n',' ').split()]
-        self.avail_fields = dict([i.split(':') for i in self.fields])
-        self.avail_fields = set(list(self.avail_fields.keys()))
-        self.rules = rules
-
-    def checkAllFieldsValid(self):
-        for field in self.fields:
-            if not re.match(self.rules,field):
-                return False
-        return True
-
-    def checkAllFieldsPresent(self):
-        return self.mandatory.issubset(self.avail_fields)
-
-    def checkValid(self):
-        return self.checkAllFieldsValid() and self.checkAllFieldsPresent()
-
-
-def readFile(file_name):
-    f = open(file_name, 'r')
-    my_file_data = f.read()
-    f.close()
-    return my_file_data
-
+import helper
+from idDocument import IdDocument
 
 def parseFiletoIds(file_data,mandatory,optional,rules):
     ids = file_data.split('\n\n')
@@ -59,7 +31,7 @@ rules = [
 rules = "(" + ")|(".join(rules) + ")"
 
 file_name = 'input\inputd04.txt'
-file = readFile(file_name)
+file = helper.read_file(file_name)
 passports = parseFiletoIds(file,m,o,rules)
 print('Part 1 solution:', countValidPassportsSimple(passports))
 print('Part 2 solution:', countValidPassports(passports))
