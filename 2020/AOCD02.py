@@ -1,4 +1,4 @@
-import helper
+from classes.helper import Helper
 
 def password_checker_sled_rental(pass_policies):
     valid_pass = 0
@@ -26,7 +26,7 @@ def password_checker(pass_policies):
     return valid_pass
 
 file_name = 'input\inputd02.txt'
-my_file_data = helper.read_file(file_name)
+my_file_data = Helper.read_file(file_name)
 
 pass_policies = my_file_data.split('\n')
 print('Part 1 solution: ', password_checker_sled_rental(pass_policies))

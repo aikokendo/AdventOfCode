@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77384b98-4bc2-4d5d-9a08-111f3b99753e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2020/AOCD05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2020/input/inputd05.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2020/seat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/AOCD01.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/AOCD02.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/AOCD03.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/AOCD04.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/AOCD05.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD05.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/classes/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/idDocument.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/classes/idDocument.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/seat.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/classes/seat.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,20 +21,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AOCD05.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AOCD01.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2020/AOCD01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AOCD05.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2020/AOCD05.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="58">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AOCD03.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2020/AOCD03.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2020/classes/helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="seat.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2020/seat.py">
+        <entry file="file://$PROJECT_DIR$/2020/classes/seat.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
@@ -38,7 +70,7 @@
         </entry>
       </file>
       <file leaf-file-name="idDocument.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2020/idDocument.py">
+        <entry file="file://$PROJECT_DIR$/2020/classes/idDocument.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="72" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="72" />
@@ -58,8 +90,20 @@
       <file leaf-file-name="AOCD04.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2020/AOCD04.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="245">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AOCD02.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2020/AOCD02.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -87,15 +131,16 @@
         <option value="$PROJECT_DIR$/2020/inputd04.txt" />
         <option value="$PROJECT_DIR$/2020/helper.py" />
         <option value="$PROJECT_DIR$/2020/input/idDocument.py" />
-        <option value="$PROJECT_DIR$/2020/AOCD03.py" />
-        <option value="$PROJECT_DIR$/2020/AOCD02.py" />
-        <option value="$PROJECT_DIR$/2020/AOCD01.py" />
-        <option value="$PROJECT_DIR$/2020/AOCD04.py" />
         <option value="$PROJECT_DIR$/2020/idDocument.py" />
         <option value="$PROJECT_DIR$/2020/input/inputd04.txt" />
         <option value="$PROJECT_DIR$/2020/input/inputd05.txt" />
         <option value="$PROJECT_DIR$/2020/seat.py" />
+        <option value="$PROJECT_DIR$/2020/classes/helper.py" />
         <option value="$PROJECT_DIR$/2020/AOCD05.py" />
+        <option value="$PROJECT_DIR$/2020/AOCD04.py" />
+        <option value="$PROJECT_DIR$/2020/AOCD03.py" />
+        <option value="$PROJECT_DIR$/2020/AOCD02.py" />
+        <option value="$PROJECT_DIR$/2020/AOCD01.py" />
       </list>
     </option>
   </component>
@@ -127,6 +172,12 @@
               <item name="AoC2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="AoC2020" type="462c0819:PsiDirectoryNode" />
               <item name="2020" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AoC2020" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AoC2020" type="462c0819:PsiDirectoryNode" />
+              <item name="2020" type="462c0819:PsiDirectoryNode" />
               <item name="input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -141,6 +192,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Richie\Google Drive\AoC2020\2020\classes" />
       <recent name="C:\Users\Richie\Google Drive\AoC2020\2020" />
       <recent name="C:\Users\Richie\Google Drive\AoC2020\2020\input" />
     </key>
@@ -161,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AOCD05">
+  <component name="RunManager" selected="Python.AOCD01">
     <configuration name="AOCD01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AoC2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -261,11 +313,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.AOCD05" />
-        <item itemvalue="Python.AOCD04" />
-        <item itemvalue="Python.AOCD03" />
-        <item itemvalue="Python.AOCD02" />
         <item itemvalue="Python.AOCD01" />
+        <item itemvalue="Python.AOCD02" />
+        <item itemvalue="Python.AOCD03" />
+        <item itemvalue="Python.AOCD04" />
+        <item itemvalue="Python.AOCD05" />
       </list>
     </recent_temporary>
   </component>
@@ -286,12 +338,12 @@
     <frame x="-6" y="0" width="1549" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.33285302" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.33285302" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -305,6 +357,26 @@
       <window_info anchor="bottom" id="Find" order="5" weight="0.32905984" />
       <window_info anchor="bottom" id="Messages" order="11" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.33285302" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32905984" />
+      <window_info anchor="bottom" id="Python Console" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -372,34 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2020/helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2020/AOCD03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2020/AOCD02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2020/AOCD01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2020/input/inputd04.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -414,7 +458,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2020/idDocument.py">
+    <entry file="file://$PROJECT_DIR$/2020/classes/idDocument.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="72" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="72" />
@@ -428,27 +472,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2020/AOCD04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2020/seat.py">
+    <entry file="file://$PROJECT_DIR$/2020/classes/seat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2020/classes/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2020/AOCD05.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="58">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2020/AOCD04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2020/AOCD03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2020/AOCD02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2020/AOCD01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,5 @@
-import helper
-from seat import Seat
+from classes.helper import Helper
+from classes.seat import Seat
 
 def parseFiletoSeats(file_data, rows, columns):
     bsp = file_data.split('\n')
@@ -21,7 +21,7 @@ columns = 7
 row_multiplier = 8
 column_multiplier = 1
 
-file = helper.read_file(file_name)
+file = Helper.read_file(file_name)
 seats = parseFiletoSeats(file, rows, columns)
 
 boardingPasses = everyoneSitDown(seats, row_multiplier, column_multiplier)

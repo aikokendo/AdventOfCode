@@ -1,4 +1,4 @@
-import helper
+from classes.helper import Helper
 def slidePath(h,v,terrain): # accepts horizontal and vertical input and terrain
     x = 0
     y = 0
@@ -13,7 +13,7 @@ def slidePath(h,v,terrain): # accepts horizontal and vertical input and terrain
 
 
 file_name = 'input\inputd03.txt'
-my_file_data = helper.read_file(file_name)
+my_file_data = Helper.read_file(file_name)
 
 terrain = my_file_data.split('\n')
 print('Part 1 solution:', slidePath(3,1,terrain))

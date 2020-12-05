@@ -1,5 +1,5 @@
-import helper
-from idDocument import IdDocument
+from classes.helper import Helper
+from classes.idDocument import IdDocument
 
 def parseFiletoIds(file_data,mandatory,optional,rules):
     ids = file_data.split('\n\n')
@@ -29,7 +29,7 @@ rules = [
 rules = "(" + ")|(".join(rules) + ")"
 
 file_name = 'input\inputd04.txt'
-file = helper.read_file(file_name)
+file = Helper.read_file(file_name)
 passports = parseFiletoIds(file,m,o,rules)
 print('Part 1 solution:', countValidPassportsSimple(passports))
 print('Part 2 solution:', countValidPassports(passports))
