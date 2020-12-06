@@ -23,7 +23,7 @@ class Seat:
         if len(BSP)>0:
             if BSP[0] == '0': # get first half
                 end = mid
-            else: # get first half
+            else: # get second half
                 start = mid + 1
             return self.findPos(BSP[1:],start,end)
         return start
