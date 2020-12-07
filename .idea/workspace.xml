@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77384b98-4bc2-4d5d-9a08-111f3b99753e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2020/AOCD07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2020/input/inputd07.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/AOCD06.py" beforeDir="false" afterPath="$PROJECT_DIR$/2020/AOCD06.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AOCD07.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AOCD07.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2020/AOCD07.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-215">
@@ -45,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AOCD06.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AOCD06.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2020/AOCD06.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="561">
+              <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -122,11 +120,11 @@
         <option value="$PROJECT_DIR$/2020/AOCD03.py" />
         <option value="$PROJECT_DIR$/2020/AOCD02.py" />
         <option value="$PROJECT_DIR$/2020/AOCD01.py" />
-        <option value="$PROJECT_DIR$/2020/AOCD06.py" />
         <option value="$PROJECT_DIR$/2020/input/inputd06.txt" />
         <option value="$PROJECT_DIR$/2020/classes/seat.py" />
         <option value="$PROJECT_DIR$/2020/input/inputd07.txt" />
         <option value="$PROJECT_DIR$/2020/AOCD07.py" />
+        <option value="$PROJECT_DIR$/2020/AOCD06.py" />
       </list>
     </option>
   </component>
@@ -200,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AOCD07">
+  <component name="RunManager" selected="Python.AOCD06">
     <configuration name="AOCD01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AoC2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -300,8 +298,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.AOCD07" />
         <item itemvalue="Python.AOCD06" />
+        <item itemvalue="Python.AOCD07" />
         <item itemvalue="Python.AOCD01" />
         <item itemvalue="Python.AOCD02" />
         <item itemvalue="Python.AOCD03" />
@@ -591,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2020/AOCD06.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/networkx/classes/reportviews.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -619,6 +610,13 @@
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2020/AOCD06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
         </state>
       </provider>
     </entry>

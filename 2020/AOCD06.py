@@ -3,19 +3,16 @@ from classes.seat import Seat
 
 def parseFiletoQuestionnairesSol1(file_data):
     questionnaires = file_data.split('\n\n')
-    qSets = []
     qCount = []
     for questionnaire in questionnaires:
         qSet = set()
         [qSet.add(q) for q in questionnaire if q != '\n']
-        qSets.append(qSet)
         qCount.append(len(qSet))
-    return qSets,qCount
+    return qCount
 
 
 def parseFiletoQuestionnairesSol2(file_data):
     questionnaires = file_data.split('\n\n')
-    qSets = []
     qCount = []
     for questionnaire in questionnaires:
         persons = questionnaire.split('\n')
@@ -27,9 +24,8 @@ def parseFiletoQuestionnairesSol2(file_data):
                 qPerson2 = set()
                 [qPerson2.add(q) for q in person]
                 qPerson = qPerson.intersection(qPerson2)
-        qSets.append(qPerson)
         qCount.append(len(qPerson))
-    return qSets, qCount
+    return qCount
 
 
 #inputs
@@ -37,7 +33,7 @@ file_name = 'input\inputd06.txt'
 
 file = Helper.read_file(file_name)
 questionnaires = parseFiletoQuestionnairesSol1(file)
-print('Part 1 solution:', sum(questionnaires[1]))
+print('Part 1 solution:', sum(questionnaires))
 
 questionnaires = parseFiletoQuestionnairesSol2(file)
-print('Part 2 solution:', sum(questionnaires[1]))
+print('Part 2 solution:', sum(questionnaires))
