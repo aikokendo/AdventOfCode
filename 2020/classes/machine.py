@@ -1,5 +1,6 @@
 import copy
 
+
 class Machine:
     def __init__(self):
         self.accumulator = 0
@@ -13,7 +14,7 @@ class Machine:
     def getAcc(self):
         return self.accumulator
 
-    def canStart(self,code): #return True if it can start, false if it cant
+    def canStart(self,code): # return True if it can start, false if it cant
         currCursor = 0
         self.resetAcc()
         codeLeft = copy.deepcopy(code)
