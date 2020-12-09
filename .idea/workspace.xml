@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77384b98-4bc2-4d5d-9a08-111f3b99753e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2020/AOCD09.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2020/input/inputd09.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="77384b98-4bc2-4d5d-9a08-111f3b99753e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,16 +65,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AOCD09.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AOCD09.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2020/AOCD09.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <state relative-caret-position="272">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inputd09.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inputd09.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2020/input/inputd09.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="403">
@@ -133,12 +129,12 @@
         <option value="$PROJECT_DIR$/2020/input/inputd08.txt" />
         <option value="$PROJECT_DIR$/2020/AOCD08.py" />
         <option value="$PROJECT_DIR$/2020/classes/machine.py" />
-        <option value="$PROJECT_DIR$/2020/AOCD09.py" />
         <option value="$PROJECT_DIR$/2020/input/inputd09.txt" />
+        <option value="$PROJECT_DIR$/2020/AOCD09.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="y" value="2" />
     <option name="width" value="1934" />
@@ -156,23 +152,6 @@
             <path>
               <item name="AoC2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="AoC2020" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AoC2020" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AoC2020" type="462c0819:PsiDirectoryNode" />
-              <item name="2020" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AoC2020" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AoC2020" type="462c0819:PsiDirectoryNode" />
-              <item name="2020" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AoC2020" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AoC2020" type="462c0819:PsiDirectoryNode" />
-              <item name="2020" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AoC2020" type="b2602c69:ProjectViewProjectNode" />
@@ -331,8 +310,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="2" width="1547" height="829" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="2" width="1547" height="829" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25033113" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -661,17 +639,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2020/AOCD09.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="44" column="8" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2020/input/inputd09.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="999" column="14" selection-start-line="999" selection-start-column="14" selection-end-line="999" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2020/AOCD09.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
         </state>
       </provider>
     </entry>
