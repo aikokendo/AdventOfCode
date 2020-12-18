@@ -1,68 +1,170 @@
 from classes.helper import Helper
-import networkx as nx
-import math
-def find_jolt_diffs(adapters):
-    jolt_difs = [0,0,1]
-    adapters.sort()
-    last_jolt = 0
-    for adapter in adapters:
-        jolt_dif = adapter - last_jolt
-        jolt_difs[jolt_dif-1] += 1
-        last_jolt = adapter
-    return jolt_difs
 
-def find_tot_arrangements(adapters):
-    adapters.append(0)
-    adapters.sort()
-    print(adapters)
-    bags = []
-    currBag = []
-    last = 0
-    for adapter in adapters:
-        if adapter - last == 3: #only connector
-            bags.append(currBag)
-            currBag = []
-        currBag.append(adapter)
-        last = adapter
-    bags.append(currBag)
-    print(bags)
 
-    combinations = 1
-    for bag in bags: #find combinations
-        if len(bag) <= 2:
-            continue
+def findEquilibrium(state, tolerance, deep = False):
+    curState = state
+    while True:
+        newState = changeState(curState,tolerance,deep)
+        if curState == newState:
+            break
+        curState = newState
+    return curState
+
+
+def changeState(state,tolerance,deep=False):
+    w = len(state[0])
+    h = len(state)
+    newState = []
+
+    for i in range(h):
+        newRow = []
+        for j in range(w):
+            item = state[i][j]
+            if item == '.':
+                newRow.append('.')
+            if item == 'L':
+                if deep:
+                    itemsAround = getItemsAroundUntilSeat(state,i,j)
+                else:
+                    itemsAround = getItemsAround(state,i,j)
+                if '#' not in itemsAround:
+                    newRow.append('#')
+                else:
+                    newRow.append('L')
+            if item == '#':
+                if deep:
+                    itemsAround = getItemsAroundUntilSeat(state,i,j)
+                else:
+                    itemsAround = getItemsAround(state, i, j)
+                if itemsAround.count('#')>=tolerance:
+                    newRow.append('L')
+                else:
+                    newRow.append('#')
+
+        newState.append(''.join(newRow))
+    return newState
+
+
+def getItemsAround(state,i,j):
+    w = len(state[0])
+    h = len(state)
+    items = []
+    if i > 0:
+        items.append(state[i-1][j])
+        if j > 0:
+            items.append(state[i-1][j-1])
+        if j < w - 1:
+            items.append(state[i-1][j+1])
+    if i < h-1:
+        items.append(state[i+1][j])
+        if j > 0:
+            items.append(state[i + 1][j - 1])
+        if j < w - 1:
+            items.append(state[i + 1][j + 1])
+    if j > 0:
+        items.append(state[i][j-1])
+    if j < w - 1:
+        items.append(state[i][j+1])
+    return items
+
+
+
+def getItemsAroundUntilSeat(state,i,j):
+    w = len(state[0])
+    h = len(state)
+    items = []
+    n = 1
+    while True:
+        if i-1*n >= 0:
+            if state[i-1*n][j] in ['L','#']:
+                items.append(state[i-1*n][j])
+                break
         else:
-            #combinations.append(len(bag)-1)
-            #n = len(bag)
-            #combinations.append(math.factorial(n) / (math.factorial(2) * math.factorial(n - 2)))
-            combinations *= find_paths(bag)
-    return combinations
+            items.append('/')
+            break
+        n += 1
+    n = 1
+    while True:
+        if i-1*n >= 0 and j - 1*n >= 0:
+            if state[i-1*n][j-1*n] in ['L','#']:
+                items.append(state[i-1*n][j-1*n])
+                break
+        else:
+            items.append('/')
+            break
+        n += 1
+    n = 1
+    while True:
+        if i - 1 * n >= 0 and j+ 1*n < w:
+            if state[i - 1 * n][j + 1 * n] in ['L', '#']:
+                items.append(state[i - 1 * n][j + 1 * n])
+                break
+        else:
+            items.append('/')
+            break
+        n += 1
 
+    n = 1
+    while True:
+        if i + 1 * n < h:
+            if state[i + 1 * n][j] in ['L', '#']:
+                items.append(state[i + 1 * n][j])
+                break
+        else:
+            items.append('/')
+            break
+        n += 1
+    n = 1
+    while True:
+        if i + 1 * n < h and j - 1 * n >= 0:
+            if state[i + 1 * n][j - 1 * n] in ['L', '#']:
+                items.append(state[i + 1 * n][j - 1 * n])
+                break
+        else:
+            items.append('/')
+            break
+        n += 1
+    n = 1
+    while True:
+        if i + 1 * n < h and j + 1 * n < w:
+            if state[i + 1 * n][j + 1 * n] in ['L', '#']:
+                items.append(state[i + 1 * n][j + 1 * n])
+                break
+        else:
+            items.append('/')
+            break
+        n += 1
 
-def find_paths(bag):
-    G = nx.DiGraph()
-    #bag.append(0)
-    #bag.append(max(bag)+3)
-    bag.sort()
-    for i in range(len(bag)):
-        for j in range(i+1,len(bag)):
-            if i != j:
-                if bag[j] - bag[i] <= 3:
-                    G.add_edge(bag[i],bag[j])
+    n = 1
+    while True:
+        if j - 1 * n >= 0:
+            if state[i][j - 1 * n] in ['L', '#']:
+                items.append(state[i][j - 1 * n])
+                break
+        else:
+            items.append('/')
+            break
+        n += 1
+    n = 1
+    while True:
+        if j + 1 * n < w:
+            if state[i][j  + 1 * n] in ['L', '#']:
+                items.append(state[i][j  + 1 * n])
+                break
+        else:
+            items.append('/')
+            break
+        n += 1
 
-    return len(list(nx.all_simple_paths(G,bag[0],bag[-1])))
-
-
+    return items
 
 
 #inputs
-file_name = 'input\inputd10.txt'
+file_name = 'input\inputd11.txt'
 
-file = [int(num) for num in Helper.read_file(file_name).split()]
-jolt_diffs = find_jolt_diffs(file)
 
-# print(find_paths(file))
+file = Helper.read_file(file_name).split('\n')
 
-print(find_tot_arrangements(file))
-print('Part 1 solution:', jolt_diffs[0]*jolt_diffs[2])
-# print('Part 2 solution:', max(weakness) + min(weakness))
+
+print('Part 1 solution:', ''.join(findEquilibrium(file,4)).count('#'))
+print('Part 2 solution:', ''.join(findEquilibrium(file,5,True)).count('#'))
