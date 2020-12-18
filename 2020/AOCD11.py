@@ -1,4 +1,5 @@
 from classes.helper import Helper
+from classes.seatLayout import SeatLayout
 
 
 def findEquilibrium(state, tolerance, deep = False):
@@ -168,3 +169,10 @@ file = Helper.read_file(file_name).split('\n')
 
 print('Part 1 solution:', ''.join(findEquilibrium(file,4)).count('#'))
 print('Part 2 solution:', ''.join(findEquilibrium(file,5,True)).count('#'))
+
+
+sol1 = SeatLayout(file,4)
+sol2 = SeatLayout(file,5,True)
+print('Part 1 solution:', ''.join(sol1.findEquilibrium()).count('#'))
+print('Part 2 solution:', ''.join(sol2.findEquilibrium()).count('#'))
+
