@@ -23,25 +23,7 @@ def getSol1(buses,nextBusTimes):
             lowest_bus = buses[i]
     return lowest * int(lowest_bus)
 
-
-
-
 def getContestResult(buses):
-    first = 0
-    correctAnswer = True
-    while True:
-        first += int(buses[0])
-        nextBusTime = getNextBusTime(first,buses[1:])
-        for i in range(len(nextBusTime)):
-            if nextBusTime[i] == 'x' or int(nextBusTime[i]) == i+1:
-                correctAnswer = True
-            else:
-                correctAnswer = False
-                break
-        if correctAnswer:
-            return first
-
-def getContestResult2(buses):
     cleanBuses2 = {}
     #cleanup
     for i in range(len(buses)):
@@ -70,6 +52,6 @@ buses = file[1].split(',')
 nextBusTimes = getNextBusTime(total,buses)
 
 print('Part 1 solution:', getSol1(buses,nextBusTimes))
-print('Part 2 solution:', getContestResult2(buses))
+print('Part 2 solution:', getContestResult(buses))
 
 
