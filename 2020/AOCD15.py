@@ -14,20 +14,18 @@ def memoryGame(file,nth):
             if n > 1:
                 memory[prevStepNum] = prevStepNth
             prevStepNum = file[n-1]
-            prevStepNth = n
         else:
             #find if number has been said
             if prevStepNum in memory.keys():
                 newNum = prevStepNth - memory[prevStepNum]
                 memory[prevStepNum] = prevStepNth
-                prevStepNth = n
                 prevStepNum = str(newNum)
             else:
                 memory[prevStepNum] = prevStepNth
                 prevStepNum = '0'
-                prevStepNth = n
         if n == nth:
             return prevStepNum
+        prevStepNth = n
 
 
 file = Helper.read_file(file_name).split(',')
