@@ -65,12 +65,8 @@ def discardInvalidTickets(rules, tickets):
 
 def findOrder(validTickets, rules):
     order = {}
-    alreadyAssigned = []
     for column in range(len(validTickets[0])):
-        print('starting column',column)
         for rule, ranges in rules.items():
-            if rule in alreadyAssigned:
-                continue
             match = True
             for tid, ticket in enumerate(validTickets):
                 value = int(ticket[column])
@@ -78,18 +74,30 @@ def findOrder(validTickets, rules):
                     match = False
                     break
             if match and tid + 1 == len(validTickets):
-                order[rule] = column
-                alreadyAssigned.append(rule)
-                break
-    print(order)
+                if rule in order:
+                    order[rule].append(column)
+                else:
+                    order[rule] = [column]
+    #reduce because rules can match more than one column
+    alreadyAssigned = []
+    while True:
+        needsReduce = False
+        for k in order.keys():
+            if len(order[k]) == 1:
+                if order[k][0] not in alreadyAssigned:
+                    alreadyAssigned.append(order[k][0])
+            else: #check if it needs to be cleaned
+                order[k] = [o for o in order[k] if o not in alreadyAssigned]
+        if len(alreadyAssigned) == len(validTickets[0]):
+            break
+
     return order
 
 def calculateSol2(myTicket, order):
     tot = 1
     for item, pos in order.items():
         if item.startswith('departure'):
-            print(myTicket[pos])
-            tot *= int(myTicket[pos])
+            tot *= int(myTicket[pos[0]])
     return tot
 
 
@@ -101,6 +109,7 @@ otherTickets = file[2].split('\n')[1:]
 sol1 = findInvalidTicketValues(rules,otherTickets)
 
 validTickets = discardInvalidTickets(rules, otherTickets)
+validTickets.append(myTicket)
 ticketOrder = findOrder(validTickets, rules)
 
 print('Part 1 solution:', sol1)
