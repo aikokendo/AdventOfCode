@@ -10,7 +10,7 @@ def depthVariance(input):
 def depthVariance3Measures(input):
     tot = 0
     for i in range(3,len(input)):
-        if input[i-2] + input[i-1] + input[i] > input[i-3] + input[i-2] + input[i-1]:
+        if sum(input[i-2:i+1]) > sum(input[i-3:i]):
             tot += 1
     return tot
 
@@ -24,3 +24,5 @@ print('Part 1 solution:', depthVariance(input))
 print('Part 2 solution:', depthVariance3Measures(input))
 
 
+#Part 1 solution: 1184
+#Part 2 solution: 1158
