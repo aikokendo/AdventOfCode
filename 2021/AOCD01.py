@@ -22,7 +22,3 @@ input = list(map(int,my_file_data.split('\n')))
 
 print('Part 1 solution:', depthVariance(input))
 print('Part 2 solution:', depthVariance3Measures(input))
-
-
-#Part 1 solution: 1184
-#Part 2 solution: 1158
