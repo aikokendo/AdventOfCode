@@ -30,7 +30,7 @@ def countFishiesUntilDay(curSchool, day):
     return tot
 
 def lanternFishStudy(existingFishies,normalLifeSpan, initialValSpawns,days):
-    FishDict = {}
+    FishDict = {} #further optimization
     SpawnDict.clear()
     tot = 0
     for fish in existingFishies:

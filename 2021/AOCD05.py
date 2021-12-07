@@ -65,9 +65,6 @@ def getNumOfDangerous(input,includeDiagonal):
     return tot
 
 
-
-
-
 file_name = 'input\inputd05.txt'
 my_file_data = Helper.read_file(file_name)
 input = my_file_data.split('\n')
